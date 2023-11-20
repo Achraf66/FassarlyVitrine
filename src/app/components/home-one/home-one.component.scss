@@ -1,0 +1,14 @@
+.banner-inner {
+    position: relative; /* Ensure proper positioning */
+}
+
+.banner-inner img {
+    width: auto; /* Make the image responsive within its container */
+    height: auto;
+    display: block; /* Remove any inline spacing issues */
+}
+
+.banner-slider img {
+    max-width: 100%;
+    height: auto;
+}
