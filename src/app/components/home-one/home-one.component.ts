@@ -8,16 +8,7 @@ import 'owl.carousel';
   styleUrls: ['./home-one.component.scss']
 })
 export class HomeOneComponent implements OnInit {
-  isVideoModalOpen = false;
-  videoUrl = 'https://www.facebook.com/watch/?v=743031664326871';
 
-  openVideoModal() {
-    this.isVideoModalOpen = true;
-  }
-
-  closeVideoModal() {
-    this.isVideoModalOpen = false;
-  }
 
   constructor() { }
 
