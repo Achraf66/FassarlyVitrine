@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
@@ -89,11 +92,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "levi-ng:build"
+            "browserTarget": "levi-ng:build",
+            "port": 3000
           },
           "configurations": {
             "production": {
-              "browserTarget": "levi-ng:build:production"
+              "browserTarget": "levi-ng:build:production",
+              "port": 3000
             }
           }
         },
