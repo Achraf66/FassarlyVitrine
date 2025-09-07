@@ -84,3 +84,28 @@ html[dir="rtl"] .copyright-bar p{ text-align:right; }
 @media (max-width:576px){
   .copyright-bar{ justify-content:center; text-align:center; }
 }
+/* Lien Powered by */
+.powered-by-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#4b5563;
+  text-decoration:none;
+  transition:color .25s ease;
+}
+.powered-by-link:hover{ color:#1d4ed8; }
+.powered-logo{
+  width:22px; height:22px; object-fit:contain;
+  transition:transform .25s ease;
+}
+.powered-by-link:hover .powered-logo{ transform:scale(1.08); }
+.brand{ color:#1d4ed8; font-weight:700; }
+
+/* RTL: inverse l’ordre proprement si la page est en arabe */
+html[dir="rtl"] .copyright-bar{ flex-direction:row-reverse; }
+html[dir="rtl"] .copyright-bar p{ text-align:right; }
+
+/* Mobile: centre tout */
+@media (max-width:576px){
+  .copyright-bar{ justify-content:center; text-align:center; }
+}
